@@ -5,6 +5,7 @@ ENV APP_HOME /app
 WORKDIR $APP_HOME
 
 COPY . .
+COPY app/sql /app/sql
 
 RUN pip install --no-cache -r requirements.txt 
 
